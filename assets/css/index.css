@@ -1,0 +1,567 @@
+/*
+
+This is a development CSS file that is compiled to a minified
+production stylesheet in assets/built/screen.css using: npm run dev
+
+*/
+
+/* Lib - Local component imports
+/* ---------------------------------------------------------- */
+
+/* Base components */
+@import "vars.css";
+@import "components/global.css";
+@import "components/forms.css";
+@import "components/buttons.css";
+
+/* Ghost components */
+@import "ghost/header.css";
+@import "ghost/content.css";
+@import "ghost/readmore.css";
+@import "ghost/members.css";
+@import "ghost/errors.css";
+@import "ghost/footer.css";
+@import "ghost/badge.css";
+@import "ghost/pagination.css";
+@import "ghost/comments.css";
+
+
+
+/* Main - Your styles here! Edit below
+/* ---------------------------------------------------------- */
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    margin: 0;
+    max-width: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: #fff;
+    background-attachment: fixed;
+    border-top: 2px solid #858383;
+    color: #1d1d1f;
+
+    font-family: Inter, 'SF Pro Display', Verdana, Geneva, Arial, sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+}
+
+a:link {
+    color: #222222;
+    text-decoration: none;
+    padding-bottom: 0px
+}
+
+.accent {
+    color: #858383;
+}
+
+a {}
+
+a:visited {
+    color: #222;
+    text-decoration: none;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #CCC;
+}
+
+a:active {
+    color: #777;
+    text-decoration: none;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #CCC;
+}
+
+a:hover {
+    color: #858383;
+    text-decoration: none;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #CCC;
+}
+
+img.ico {
+    border: 0;
+    margin-left: 1px;
+    margin-right: 1px;
+    background-color: #858383;
+}
+
+img.lin {
+    border: 0;
+    margin: 0;
+    border: 0;
+    background-color: #222222;
+}
+
+.ads {
+    font-size: 10px;
+    line-height: 12px;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+/* 			_______________________	*/
+/*			THE BASICS				*/
+
+
+p.aside {
+    float: left;
+    margin: 4px 14px 9px 0px;
+    width: 256px;
+    font-size: 11px;
+    line-height: 13px;
+    font-style: oblique;
+    text-align: center;
+    color: #444;
+}
+
+blockquote {
+    margin: 0px 30px 0px 14px;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+}
+
+img.wrap {
+    display: block;
+    border: 0;
+    margin: 3px 10px 6px 0px;
+}
+
+img.col {
+    display: block;
+    border: 0;
+    margin-left: 14px;
+}
+
+
+img.std {
+    display: block;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+img.arc {
+    display: block;
+    border: 0;
+    margin: 10px 0px 7px 0px;
+}
+
+#callout {
+    width: 220px;
+    margin: 0px 0px 0px -14px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+}
+
+
+/* 			_______________________	*/
+/*			THE MASTHEAD			*/
+
+#eyebrow {
+    position: relative;
+    height: 84px;
+    width: 880rem;
+    margin: 17px auto 0px auto;
+    border-bottom: 3px double #9f9f9f;
+
+}
+
+#eyebrowwide {
+    border-bottom: 3px double #9f9f9f;
+    display: flex;
+    gap: 4rem;
+    height: auto;
+    justify-content: space-between;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    position: relative;
+    text-align: left;
+    width: 88rem;
+}
+
+#eyebrowwide .logo {
+    display: inline
+}
+
+.masthead {
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    width: 88rem;
+}
+
+.head-bloc {
+    width: 26.7rem;
+}
+
+.heading {
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 0.009rem;
+    margin: 0 0 .2rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+#eyebrowwide .title {
+    font-family: 'Cooper*', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 0 0 .2rem;
+    line-height: 1.4;
+}
+
+#eyebrowwide p {
+    font-size: 1.2rem;
+    line-height: 1.45;
+    margin: 0;
+}
+
+.head-bloc.about {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: right;
+    width: 26.7rem;
+}
+
+#eyepop {
+    position: absolute;
+    width: 510px;
+    left: 14px;
+    top: 13px;
+    text-align: left;
+    background-color: #FFF;
+    z-index: 10;
+    visibility: hidden;
+}
+
+#eyepop2 {
+    position: absolute;
+    width: 510px;
+    left: 14px;
+    top: 13px;
+    text-align: left;
+    background-color: #FFF;
+    z-index: 20;
+    visibility: hidden;
+}
+
+#eyebrowwide h1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 0.009rem;
+    margin: 0 0 .2rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+/* 			_______________________	*/
+/*			STRUCTURAL 				*/
+
+#enclose {
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+#frame {
+    width: 880px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    border-top: 3px double #9f9f9f;
+}
+
+#framein {
+    width: 880px;
+    margin: 0px auto 0px auto;
+    text-align: center;
+}
+
+#widescrtxt {
+    position: absolute;
+    left: 385px;
+    top: 191px;
+    width: 300px;
+    text-align: left;
+    font-family: Georgia, Verdana;
+    color: #7F7F81;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#footer {
+    position: relative;
+    width: 820px;
+    height: 120px;
+    border-top: 3px double #9f9f9f;
+    text-align: left;
+    padding-top: 9px;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    clear: both;
+}
+
+
+/* 			_______________________	*/
+/*			THE COLUMNS			 	*/
+
+
+#stdcol {
+    border-right: 1px solid #9f9f9f;
+    padding: 0px 20px 40px 14px;
+    margin: 0;
+    text-align: left;
+    float: left;
+}
+
+#stdtext {
+    width: 22.4rem;
+    font-size: 1.3rem;
+    line-height: 1.45;
+}
+
+#stdcol h1 {
+    font-size: 1.6rem;
+    font-weight: 750;
+    letter-spacing: 0.03rem;
+    margin: 1rem 0 1.5rem;
+}
+
+#stdcol h4 {
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+    font-size: 1.6rem;
+    font-weight: 750;
+    margin: 1rem 0 1.5rem;
+}
+
+#stdcol h4 svg {
+    display: inline;
+    margin-top: -1px;
+    vertical-align: middle;
+}
+
+#stdcol article {
+    margin-bottom: 2rem
+}
+
+#stdcol article p {
+    font-size: 1.3rem;
+    line-height: 1.45;
+}
+
+#stdcol article p a {
+    border-bottom: 1px solid #f30;
+    color: #F30;
+    font-weight: 500;
+}
+
+#stdcol article svg {
+    display: inline;
+    margin-top: -1px;
+    vertical-align: middle;
+}
+
+#pixframe2 {
+    padding: 12px 0px 8px 14px;
+}
+
+
+#twocol {
+    border-right: 1px solid #9f9f9f;
+    padding: 1rem 0 4rem 0;
+    margin: 0;
+    text-align: left;
+    float: left;
+}
+
+#twocol article {
+    border-bottom: 1px solid #9f9f9f;
+    margin-bottom: 1.5rem;
+    padding: 0 3rem 1.5rem 0;
+}
+
+#twocol article footer {
+    margin: 1rem 0 0 0;
+}
+
+#twocol article footer p {
+    font-size: 1.2rem;
+    opacity: .8;
+}
+
+#twocol article footer svg {
+    display: inline;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+
+#twotext {
+    width: 36rem;
+}
+
+#twotext .article-body p {
+    font-size: 1.4rem;
+    line-height: 1.45;
+}
+
+#twotext .article-body p a {
+    border-bottom: 1px solid #f30;
+    color: #f30;
+    font-weight: 500;
+}
+
+
+#threecol {
+    padding: 30px 64px 40px 64px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    float: left;
+}
+
+#threetext {
+    width: 480px;
+    font-size: 11px;
+    line-height: 17px;
+}
+
+/* 			HEADERS 				*/
+
+h3 {
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+    font-style: oblique;
+    color: #444;
+    margin: 0px 0px 0px 0px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+}
+
+#twocol h1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+    margin: 1rem 0 1rem;
+}
+
+#twocol h2,
+#twocol h4 {
+    font-family: 'Inter Tight', Georgia, 'SF Pro Display', sans-serif;
+    margin: 0 0 .5rem;
+    font-size: 2.4rem;
+    font-weight: 850;
+    text-wrap: pretty;
+}
+
+#twocol h4.featured {
+    font-family: 'Cooper*','Inter Tight', Georgia, 'SF Pro Display', sans-serif;
+    margin: 0 0 1rem;
+    font-size: 3.8rem;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 1.1;
+    text-wrap: pretty;
+}
+
+
+
+/* 			ARCHIVE WOOD 			*/
+h5 {
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+    color: #444;
+    margin: 0;
+    padding: 0px 0px 6px 0px;
+    font-size: 40px;
+    line-height: 34px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+/* 			SUBHEADS OBLIQUE 			*/
+h6 {
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+    font-style: oblique;
+    color: #444;
+    margin: 7px 0px 4px 0px;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+
+/* 			_______________________	*/
+/*			THE NAVIGATION			*/
+
+#nav {
+    font-size: 1.3rem;
+    margin: 0px 0px 0px -14px;
+    padding: 10px 0px 11px 0px;
+    border-bottom: 1px solid #CCC;
+}
+
+#navPyra {
+    margin: 0;
+    padding: 2px 2px 2px 0;
+    text-decoration: none;
+    border: 0;
+}
+
+#navPyra li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-decoration: none;
+    list-style-type: none;
+    border: 0;
+}
+
+#navPyra a:link,
+#navPyra a:visited {
+    font-size: 1.3rem;
+    line-height: 1.45;
+    padding: 0px 0px 0px 14px;
+    text-decoration: none;
+    margin: 0px 0px 0px 0px;
+    border: 0;
+}
+
+#navPyra a:link.active,
+#navPyra a:visited.active,
+#navPyra a:hover {
+    color: #222;
+    text-decoration: none;
+    background: url(/web/20050301194246im_/http://www.coudal.com/i/tab_pyra.gif) no-repeat left top;
+    border: 0;
+}
+
+#navPyra a:visited {
+    color: #555;
+    text-decoration: none;
+    border: 0;
+}
