@@ -213,9 +213,10 @@ img.arc {
 }
 
 .heading {
-    font-size: 1.3rem;
-    font-weight: 800;
-    letter-spacing: 0.009rem;
+    font-family: 'Inter Tight', Georgia, 'SF Pro Display', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 750;
+    letter-spacing: 0.05rem;
     margin: 0 0 .2rem;
     line-height: 1.4;
     text-transform: uppercase;
@@ -338,10 +339,12 @@ img.arc {
     float: left;
 }
 
+#stdcol.quick-bytes {
+    padding-top: 1rem
+}
+
 #stdtext {
     width: 22.4rem;
-    font-size: 1.3rem;
-    line-height: 1.45;
 }
 
 #stdcol h1 {
@@ -355,9 +358,15 @@ img.arc {
     align-items: center;
     display: flex;
     gap: .5rem;
+    font-family: 'Inter Tight', Georgia, 'SF Pro Display', sans-serif;
     font-size: 1.6rem;
     font-weight: 750;
-    margin: 1rem 0 1.5rem;
+    letter-spacing: 0.05rem;
+    margin: 0 0 1.5rem;
+}
+
+#stdcol.misc h4 {
+    margin-bottom: .5rem;
 }
 
 #stdcol h4 svg {
@@ -370,7 +379,7 @@ img.arc {
     margin-bottom: 2rem
 }
 
-#stdcol article p {
+#stdcol p {
     font-size: 1.3rem;
     line-height: 1.45;
 }
@@ -385,6 +394,34 @@ img.arc {
     display: inline;
     margin-top: -1px;
     vertical-align: middle;
+}
+
+#stdcol section {
+    margin: 0 0 4rem;
+}
+
+#stdcol section p {
+    margin-bottom: 1.5rem;
+}
+
+#stdcol.misc blockquote {
+    font-family: 'Futura-CondensedExtraBold','Cooper*','Inter Tight', Georgia, 'SF Pro Display', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#stdcol.misc blockquote cite {
+    display: block;
+    font-family: inter, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 1rem 0 0 0;
+    padding: 0;
 }
 
 #pixframe2 {
@@ -474,17 +511,18 @@ h3 {
     font-family: 'Inter Tight', Georgia, 'SF Pro Display', sans-serif;
     margin: 0 0 .5rem;
     font-size: 2.4rem;
-    font-weight: 850;
+    font-weight: 750;
     text-wrap: pretty;
 }
 
 #twocol h4.featured {
-    font-family: 'Cooper*','Inter Tight', Georgia, 'SF Pro Display', sans-serif;
+    font-family: 'Futura-CondensedExtraBold','Cooper*','Inter Tight', Georgia, 'SF Pro Display', sans-serif;
     margin: 0 0 1rem;
-    font-size: 3.8rem;
-    font-style: italic;
+    font-size: 4rem;
     font-weight: 900;
-    line-height: 1.1;
+    letter-spacing: -0.05rem;
+    line-height: 1;
+    text-transform: uppercase;
     text-wrap: pretty;
 }
 
@@ -520,9 +558,9 @@ h6 {
 
 #nav {
     font-size: 1.3rem;
-    margin: 0px 0px 0px -14px;
+    margin: 0 0 2rem -1.4rem;
     padding: 10px 0px 11px 0px;
-    border-bottom: 1px solid #CCC;
+    border-bottom: 3px double #9f9f9f;
 }
 
 #navPyra {
