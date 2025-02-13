@@ -1,0 +1,41 @@
+<article class="{{post_class}}">
+    <h2><a href="{{url}}">{{title}}</a></h2>
+    <p class="pubdate"><time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="MMM D, YYYY"}}</time></p>
+    {{#if feature_image}}
+        <div class="featured-img-wrap">
+            <figure>
+                <picture>
+                    <source
+                        srcset="
+                            {{img_url feature_image size="s" format="avif"}} 560w,
+                            {{img_url feature_image size="l" format="avif"}} 1120w"
+                        sizes="(min-width: 1200px) 560px, 100vw"
+                        type="image/avif">
+                    <source
+                        srcset="
+                            {{img_url feature_image size="s" format="webp"}} 560w,
+                            {{img_url feature_image size="l" format="webp"}} 1120w"
+                        sizes="(min-width: 1200px) 560px, 100vw"
+                        type="image/webp">
+                    <img
+                        srcset="
+                            {{img_url feature_image size="s"}} 560w,
+                            {{img_url feature_image size="l"}} 1120w"
+                        sizes="(min-width: 1200px) 560px, 100vw"
+                        src="{{img_url feature_image size="s"}}"
+                        class="featured-image"
+                        alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+                        loading="lazy"
+                        width="560"
+                        height="373">
+                </picture>
+            </figure>
+        </div>
+    {{/if}}
+    <div class="article-body">
+        {{content}}
+    </div>
+    <footer>
+        <p class="post-meta">{{> "icons/folder"}} {{tags limit="3" separator=", "}}</p>
+    </footer>
+</article>

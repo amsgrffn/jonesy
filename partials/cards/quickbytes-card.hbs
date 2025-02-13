@@ -1,0 +1,10 @@
+<article class="{{post_class}}">
+    {{#has tag="bookmarks"}}
+    {{> "icons/bookmark"}}
+    {{/has}}
+    {{#has tag="note"}}
+    {{> "icons/note"}}
+    {{/has}}
+    {{content}}
+    <span><a href="{{url}}">{{date published_at timeago="true"}}</a> &bull; {{tags limit="1"}}</span>
+</article>

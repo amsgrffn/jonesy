@@ -9,6 +9,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 /* ---------------------------------------------------------- */
 
 /* Base components */
+@import "base/reset.css";
 @import "vars.css";
 @import "components/global.css";
 @import "components/forms.css";
@@ -49,8 +50,7 @@ body {
     background-attachment: fixed;
     border-top: 2px solid #858383;
     color: #1d1d1f;
-
-    font-family: Inter, 'SF Pro Display', Verdana, Geneva, Arial, sans-serif;
+    font-family: var(--sans-serif);
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.5;
@@ -92,49 +92,9 @@ a:hover {
     border-bottom: 1px solid #CCC;
 }
 
-img.ico {
-    border: 0;
-    margin-left: 1px;
-    margin-right: 1px;
-    background-color: #858383;
-}
-
-img.lin {
-    border: 0;
-    margin: 0;
-    border: 0;
-    background-color: #222222;
-}
-
-.ads {
-    font-size: 10px;
-    line-height: 12px;
-    font-family: Verdana, Geneva, Arial, sans-serif;
-    text-transform: none;
-    letter-spacing: 0;
-}
-
 /* 			_______________________	*/
 /*			THE BASICS				*/
 
-
-p.aside {
-    float: left;
-    margin: 4px 14px 9px 0px;
-    width: 256px;
-    font-size: 11px;
-    line-height: 13px;
-    font-style: oblique;
-    text-align: center;
-    color: #444;
-}
-
-blockquote {
-    margin: 0px 30px 0px 14px;
-    font-size: 11px;
-    line-height: 13px;
-    font-family: Verdana, Geneva, Arial, sans-serif;
-}
 
 img.wrap {
     display: block;
@@ -171,6 +131,43 @@ img.arc {
     border-bottom: 1px solid #CCC;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--display);
+}
+
+/* 			_______________________	*/
+/*			STRUCTURAL 				*/
+
+#trojan {
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.col-wrap {
+    border-top: 3px double #9f9f9f;
+    display: flex;
+    margin: 1rem auto 0;
+    width: 88rem;
+}
+
+#framein {
+    width: 88rem;
+    margin: 0 auto;
+}
+
+#footer {
+    border-top: 3px double #9f9f9f;
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 88rem;
+}
+
+#footer p {
+    color: var(--slate-gray);
+    font-size: 1.3rem;
+}
+
 
 /* 			_______________________	*/
 /*			THE MASTHEAD			*/
@@ -184,7 +181,8 @@ img.arc {
 
 }
 
-#eyebrowwide {
+.hat {
+    align-content: flex-start;
     border-bottom: 3px double #9f9f9f;
     display: flex;
     gap: 4rem;
@@ -197,12 +195,12 @@ img.arc {
     width: 88rem;
 }
 
-#eyebrowwide .logo {
+.hat .logo {
     display: inline
 }
 
 .masthead {
-    height: 280px;
+    height: 28rem;
     margin: 0 auto;
     position: relative;
     width: 88rem;
@@ -212,36 +210,45 @@ img.arc {
     width: 26.7rem;
 }
 
-.heading {
-    font-family: 'Inter Tight', Georgia, 'SF Pro Display', sans-serif;
+.hat p.heading {
+    font-family: var(--display);
     font-size: 1.4rem;
-    font-weight: 750;
-    letter-spacing: 0.05rem;
+    font-weight: 700;
     margin: 0 0 .2rem;
     line-height: 1.4;
     text-transform: uppercase;
 }
 
-#eyebrowwide .title {
-    font-family: 'Cooper*', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 800;
+.hat .title {
+    font-family: "ff-market-web-pro",Caveat, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
     margin: 0 0 .2rem;
-    line-height: 1.4;
 }
 
-#eyebrowwide p {
+.hat .title a:hover {
+    border: none;
+    color: #f30;
+    text-decoration: underline;
+}
+
+.hat p {
     font-size: 1.2rem;
     line-height: 1.45;
     margin: 0;
 }
 
 .head-bloc.about {
-    align-items: center;
     display: flex;
     gap: 2rem;
     justify-content: right;
     width: 26.7rem;
+}
+
+.logo {
+    display: block;
+    margin-top: 8px;
 }
 
 #eyepop {
@@ -266,162 +273,336 @@ img.arc {
     visibility: hidden;
 }
 
-#eyebrowwide h1 {
-    font-size: 1.3rem;
-    font-weight: 800;
-    letter-spacing: 0.009rem;
-    margin: 0 0 .2rem;
-    line-height: 1.4;
-    text-transform: uppercase;
-}
-
-/* 			_______________________	*/
-/*			STRUCTURAL 				*/
-
-#enclose {
-    width: 100%;
-    height: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-}
-
-#frame {
-    width: 880px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    text-align: center;
-    border-top: 3px double #9f9f9f;
-}
-
-#framein {
-    width: 880px;
-    margin: 0px auto 0px auto;
-    text-align: center;
-}
-
-#widescrtxt {
-    position: absolute;
-    left: 385px;
-    top: 191px;
-    width: 300px;
-    text-align: left;
-    font-family: Georgia, Verdana;
-    color: #7F7F81;
-    font-size: 12px;
-    line-height: 16px;
-}
-
-#footer {
-    position: relative;
-    width: 820px;
-    height: 120px;
-    border-top: 3px double #9f9f9f;
-    text-align: left;
-    padding-top: 9px;
-    margin: 0px auto 0px auto;
-    text-align: center;
-    clear: both;
-}
 
 
-/* 			_______________________	*/
-/*			THE COLUMNS			 	*/
-
-
-#stdcol {
+.longform {
     border-right: 1px solid #9f9f9f;
-    padding: 0px 20px 40px 14px;
+    padding: 1rem 0 4rem 0;
     margin: 0;
-    text-align: left;
-    float: left;
 }
 
-#stdcol.quick-bytes {
-    padding-top: 1rem
+.longform-wrap {
+    width: 36rem;
 }
 
-#stdtext {
+.longform article {
+    border-bottom: 1px solid #9f9f9f;
+    margin-bottom: 1.5rem;
+    padding: 0 2rem 1.5rem 0;
+}
+
+.longform article:last-child {
+    border-bottom: none;
+}
+
+.longform article footer {
+    margin: 1rem 0 0 0;
+}
+
+.longform article footer a {
+    color: var(--slate-gray);
+}
+
+.longform article footer p {
+    font-size: 1.2rem;
+}
+
+.longform article p.pubdate {
+    color: var(--slate-gray);
+    font-family: var(--display);
+    font-size: 1.4rem;
+    margin: 0 0 1rem;
+    opacity: .8;
+}
+
+.longform article footer svg {
+    display: inline;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+
+.longform .article-body blockquote,
+.longform .article-body ol,
+.longform .article-body p,
+.longform .article-body ul {
+    font-size: 1.5rem;
+    line-height: 1.45;
+    margin-bottom: 1.5rem;
+}
+
+.longform .article-body blockquote {
+   border-left: 1px solid #1f1f1f;
+   margin-left: 0;
+   padding-left: 1.5rem;
+}
+
+.longform .article-body ol,
+.longform .article-body ul {
+   list-style-position: outside;
+   padding-left: 1.55rem;
+}
+
+.longform .article-body ol li,
+.longform .article-body ul li {
+   margin-bottom: .25rem;
+}
+
+.longform .article-body p a {
+    border-bottom: 1px solid #f30;
+    color: #f30;
+    font-weight: 500;
+}
+
+.longform article .featured-image {
+    background: #fafafa;
+    border: 1px solid #9f9f9f;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    padding: 6px;
+}
+
+.longform h1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+    margin: 1rem 0 1rem;
+}
+
+.longform h2 {
+    margin: 0;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+    text-wrap: pretty;
+}
+
+.longform h2 a {
+    color: var(--onyx);
+    transition: color 0.3s ease-in-out;
+    background-image: linear-gradient(transparent 90%, currentColor 98%);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size 0.3s ease;
+}
+
+.longform h2 a:hover {
+    background-size: 100% 100%;
+    color: var(--orangeish);
+}
+
+.longform h3, .longform h4 {
+    font-size: 1.7rem;
+}
+
+.longform .tag-quote h2 {
+    display: none
+}
+
+.longform .tag-quote blockquote {
+    border: none;
+    font-family: var(--display);
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 4.4rem 0;
+    padding-left: 0;
+    text-wrap: balance;
+}
+
+.longform .tag-quote blockquote:after {
+    background-color: #1d1d1f;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 0;
+    position: relative;
+    top: 2.2rem;
+    width: 200px;
+}
+
+.longform .tag-quote cite {
+    display: block;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.longform .tag-quote cite a::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 7h10v10'/%3E%3Cpath d='M7 17 17 7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    display: inline-block;
+    height: 16px;
+    margin-left: 1px;
+    position: relative;
+    top: 1px;
+    transition: transform 0.2s ease;
+    vertical-align: middle;
+    width: 16px;
+}
+
+.longform .tag-quote cite a:hover::after {
+    transform: translate(2px, -2px);
+}
+
+
+
+
+
+.lilcol {
+    border-right: 1px solid #9f9f9f;
+    padding: 0 2rem 4rem 1.4rem;
+    margin: 0;
+}
+
+.lilcol.quickbytes {
+    padding-top: 1.5rem;
+}
+
+.lilcol.misc {
+    border-right: none;
+}
+
+.lilcol-wrap {
     width: 22.4rem;
 }
 
-#stdcol h1 {
-    font-size: 1.6rem;
-    font-weight: 750;
-    letter-spacing: 0.03rem;
-    margin: 1rem 0 1.5rem;
+.quickbytes {
+    padding-top: 1rem
 }
 
-#stdcol h4 {
+.lilcol h4 {
     align-items: center;
     display: flex;
     gap: .5rem;
-    font-family: 'Inter Tight', Georgia, 'SF Pro Display', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 750;
-    letter-spacing: 0.05rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
     margin: 0 0 1.5rem;
+    text-transform: uppercase;
 }
 
-#stdcol.misc h4 {
+.misc h4 {
     margin-bottom: .5rem;
 }
 
-#stdcol h4 svg {
+.lilcol h4 svg {
     display: inline;
     margin-top: -1px;
     vertical-align: middle;
 }
 
-#stdcol article {
-    margin-bottom: 2rem
+.quickbytes article {
+    margin-bottom: 2rem;
 }
 
-#stdcol p {
+.quickbytes article span {
+    font-family: var(--display);
     font-size: 1.3rem;
+}
+
+.quickbytes article span a {
+    color: var(--slate-gray);
+}
+
+.lilcol p {
+    font-size: 1.4rem;
     line-height: 1.45;
 }
 
-#stdcol article p a {
+.quickbytes article p a {
     border-bottom: 1px solid #f30;
     color: #F30;
     font-weight: 500;
 }
 
-#stdcol article svg {
-    display: inline;
-    margin-top: -1px;
+.quickbytes article p a:hover {
+    border-bottom: none;
+    color: var(--onyx);
+    font-weight: 500;
+}
+
+.quickbytes article svg {
+    float: left;
+    margin: 2px 4px 0 0;
     vertical-align: middle;
 }
 
-#stdcol section {
+.misc section {
     margin: 0 0 4rem;
 }
 
-#stdcol section p {
+.misc section p {
     margin-bottom: 1.5rem;
 }
 
-#stdcol.misc blockquote {
-    font-family: 'Futura-CondensedExtraBold','Cooper*','Inter Tight', Georgia, 'SF Pro Display', sans-serif;
-    font-size: 3rem;
-    font-weight: 900;
-    line-height: 1.1;
+.misc blockquote {
+    font-family: var(--display);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-wrap: balance;
 }
 
-#stdcol.misc blockquote cite {
+.misc blockquote cite {
     display: block;
-    font-family: inter, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 600;
+    font-family: var(--sans-serif);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
     line-height: 1.3;
     margin: 1rem 0 0 0;
     padding: 0;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.input-group input {
+    border: 1px solid #cfcfcf;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    font-family: var(--display);
+    font-size: 1.4rem;
+    margin-bottom: .75rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.input-group input::placeholder {
+    color: var(--onyx);
+    transition: opacity 0.2s ease;
+}
+
+.input-group input:focus::placeholder {
+    opacity: 0;
+}
+
+.input-group button {
+    background: var(--orangeish);
+    border: 1px solid var(--orangeish);
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+    font-family: var(--display);
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+.input-group button:hover {
+    background: #4f46e5;
 }
 
 #pixframe2 {
@@ -429,49 +610,6 @@ img.arc {
 }
 
 
-#twocol {
-    border-right: 1px solid #9f9f9f;
-    padding: 1rem 0 4rem 0;
-    margin: 0;
-    text-align: left;
-    float: left;
-}
-
-#twocol article {
-    border-bottom: 1px solid #9f9f9f;
-    margin-bottom: 1.5rem;
-    padding: 0 3rem 1.5rem 0;
-}
-
-#twocol article footer {
-    margin: 1rem 0 0 0;
-}
-
-#twocol article footer p {
-    font-size: 1.2rem;
-    opacity: .8;
-}
-
-#twocol article footer svg {
-    display: inline;
-    margin-top: -2px;
-    vertical-align: middle;
-}
-
-#twotext {
-    width: 36rem;
-}
-
-#twotext .article-body p {
-    font-size: 1.4rem;
-    line-height: 1.45;
-}
-
-#twotext .article-body p a {
-    border-bottom: 1px solid #f30;
-    color: #f30;
-    font-weight: 500;
-}
 
 
 #threecol {
@@ -487,80 +625,15 @@ img.arc {
     line-height: 17px;
 }
 
-/* 			HEADERS 				*/
-
-h3 {
-    font-family: times, Times New Roman, times-roman, georgia, serif;
-    font-style: oblique;
-    color: #444;
-    margin: 0px 0px 0px 0px;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 900;
-}
-
-#twocol h1 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    letter-spacing: 0.03rem;
-    margin: 1rem 0 1rem;
-}
-
-#twocol h2,
-#twocol h4 {
-    font-family: 'Inter Tight', Georgia, 'SF Pro Display', sans-serif;
-    margin: 0 0 .5rem;
-    font-size: 2.4rem;
-    font-weight: 750;
-    text-wrap: pretty;
-}
-
-#twocol h4.featured {
-    font-family: 'Futura-CondensedExtraBold','Cooper*','Inter Tight', Georgia, 'SF Pro Display', sans-serif;
-    margin: 0 0 1rem;
-    font-size: 4rem;
-    font-weight: 900;
-    letter-spacing: -0.05rem;
-    line-height: 1;
-    text-transform: uppercase;
-    text-wrap: pretty;
-}
-
-
-
-/* 			ARCHIVE WOOD 			*/
-h5 {
-    font-family: times, Times New Roman, times-roman, georgia, serif;
-    color: #444;
-    margin: 0;
-    padding: 0px 0px 6px 0px;
-    font-size: 40px;
-    line-height: 34px;
-    letter-spacing: -1px;
-    font-weight: bold;
-}
-
-/* 			SUBHEADS OBLIQUE 			*/
-h6 {
-    font-family: times, Times New Roman, times-roman, georgia, serif;
-    font-style: oblique;
-    color: #444;
-    margin: 7px 0px 4px 0px;
-    font-size: 22px;
-    line-height: 22px;
-    letter-spacing: -1px;
-    font-weight: bold;
-}
-
 
 /* 			_______________________	*/
 /*			THE NAVIGATION			*/
 
 #nav {
+    border-bottom: 3px double #9f9f9f;
     font-size: 1.3rem;
     margin: 0 0 2rem -1.4rem;
-    padding: 10px 0px 11px 0px;
-    border-bottom: 3px double #9f9f9f;
+    padding: 1rem 0 1.1rem 0;
 }
 
 #navPyra {
