@@ -1,6 +1,6 @@
 <article class="{{post_class}}">
     <h2><a href="{{url}}">{{title}}</a></h2>
-    <p class="pubdate"><time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="dddd, MMMM D, YYYY"}}</time></p>
+    <p class="pubdate">{{#has tag="quote"}}<a href="{{url}}"><time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="dddd, MMMM D, YYYY"}}</time></a>{{else}}<time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="dddd, MMMM D, YYYY"}}</time>{{/has}}</p>
     {{#if feature_image}}
         <div class="featured-img-wrap">
             <figure>

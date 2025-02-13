@@ -109,6 +109,7 @@ h1,h2,h3,h4,h5,h6 {
 .col-wrap {
     border-top: 3px double #9f9f9f;
     display: flex;
+
     margin: 1rem auto 0;
     width: 96rem;
 }
@@ -165,7 +166,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .hat p.heading {
     font-family: var(--display);
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.1;
     margin: 0 0 .2rem;
@@ -230,7 +231,7 @@ h1,h2,h3,h4,h5,h6 {
 .longform article {
     border-bottom: 1px solid #9f9f9f;
     margin-bottom: 1.5rem;
-    padding: 0 2rem 1.5rem 0;
+    padding: 0 1.5rem 1.5rem 0;
 }
 
 .longform article:last-child {
@@ -269,6 +270,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
+    text-wrap: prettyl
 }
 
 .longform .article-body blockquote {
@@ -300,13 +302,6 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: .5rem;
     margin-bottom: 1.5rem;
     padding: 6px;
-}
-
-.longform h1 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    letter-spacing: 0.03rem;
-    margin: 1rem 0 1rem;
 }
 
 .longform h2 {
@@ -343,12 +338,11 @@ h1,h2,h3,h4,h5,h6 {
 .longform .tag-quote blockquote {
     border: none;
     font-family: var(--display);
-    font-size: 2.6rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 800;
     line-height: 1.3;
     margin: 0 0 4.4rem 0;
     padding-left: 0;
-    text-wrap: balance;
 }
 
 .longform .tag-quote blockquote:after {
@@ -395,16 +389,19 @@ h1,h2,h3,h4,h5,h6 {
 
 .lilcol {
     border-right: 1px solid #9f9f9f;
-    padding: 0 2rem 4rem 1.4rem;
+
     margin: 0;
 }
 
 .lilcol.quickbytes {
-    padding-top: 1.5rem;
+    padding: 1.5rem;
+    width: 31rem;
 }
 
 .lilcol.misc {
     border-right: none;
+    padding: 1.5rem;
+    width: 25rem;
 }
 
 .lilcol-wrap {
@@ -419,8 +416,8 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     display: flex;
     gap: .5rem;
-    font-size: 2.2rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 700;
     line-height: 1.4;
     margin: 0 0 1.5rem;
 }
@@ -553,7 +550,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 #threecol {
-    padding: 30px 64px 40px 64px;
+    padding:0;
     margin: 0px 0px 0px 0px;
     text-align: left;
     float: left;
@@ -572,8 +569,8 @@ h1,h2,h3,h4,h5,h6 {
 #nav {
     border-bottom: 3px double #9f9f9f;
     font-size: 1.3rem;
-    margin: 0 0 2rem -1.4rem;
-    padding: 1rem 0 1.1rem 0;
+    margin: 0 0 1.5rem -1.5rem;
+    padding: 0 0 1.5rem 0;
 }
 
 #navPyra {
