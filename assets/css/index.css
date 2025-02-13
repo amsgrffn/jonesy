@@ -92,44 +92,6 @@ a:hover {
     border-bottom: 1px solid #CCC;
 }
 
-/* 			_______________________	*/
-/*			THE BASICS				*/
-
-
-img.wrap {
-    display: block;
-    border: 0;
-    margin: 3px 10px 6px 0px;
-}
-
-img.col {
-    display: block;
-    border: 0;
-    margin-left: 14px;
-}
-
-
-img.std {
-    display: block;
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-img.arc {
-    display: block;
-    border: 0;
-    margin: 10px 0px 7px 0px;
-}
-
-#callout {
-    width: 220px;
-    margin: 0px 0px 0px -14px;
-    padding-top: 10px;
-    padding-bottom: 3px;
-    border-top: 1px solid #CCC;
-    border-bottom: 1px solid #CCC;
-}
 
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--display);
@@ -148,11 +110,11 @@ h1,h2,h3,h4,h5,h6 {
     border-top: 3px double #9f9f9f;
     display: flex;
     margin: 1rem auto 0;
-    width: 88rem;
+    width: 96rem;
 }
 
 #framein {
-    width: 88rem;
+    width: 96rem;
     margin: 0 auto;
 }
 
@@ -160,7 +122,7 @@ h1,h2,h3,h4,h5,h6 {
     border-top: 3px double #9f9f9f;
     margin: 0 auto;
     padding: 1rem 0;
-    width: 88rem;
+    width: 96rem;
 }
 
 #footer p {
@@ -171,15 +133,6 @@ h1,h2,h3,h4,h5,h6 {
 
 /* 			_______________________	*/
 /*			THE MASTHEAD			*/
-
-#eyebrow {
-    position: relative;
-    height: 84px;
-    width: 880rem;
-    margin: 17px auto 0px auto;
-    border-bottom: 3px double #9f9f9f;
-
-}
 
 .hat {
     align-content: flex-start;
@@ -192,7 +145,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 1rem 0;
     position: relative;
     text-align: left;
-    width: 88rem;
+    width: 96rem;
 }
 
 .hat .logo {
@@ -200,55 +153,44 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .masthead {
-    height: 28rem;
+    height: 34rem;
     margin: 0 auto;
     position: relative;
-    width: 88rem;
+    width: 96rem;
 }
 
 .head-bloc {
-    width: 26.7rem;
+    width: 31.7rem;
 }
 
 .hat p.heading {
     font-family: var(--display);
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin: 0 0 .2rem;
-    line-height: 1.4;
-    text-transform: uppercase;
-}
-
-.hat .title {
-    font-family: "ff-market-web-pro",Caveat, sans-serif;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.1;
     margin: 0 0 .2rem;
 }
 
-.hat .title a:hover {
-    border: none;
-    color: #f30;
-    text-decoration: underline;
-}
-
 .hat p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.45;
     margin: 0;
 }
 
-.head-bloc.about {
+.head-bloc.support {
+    align-items: center;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: right;
-    width: 26.7rem;
+    width: 31.7rem;
 }
 
-.logo {
-    display: block;
-    margin-top: 8px;
+.head-bloc.support .logo {
+    width: 10rem;
+}
+
+.hat .mono {
+    font-family: var(--mono);
 }
 
 #eyepop {
@@ -282,7 +224,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .longform-wrap {
-    width: 36rem;
+    width: 40rem;
 }
 
 .longform article {
@@ -309,7 +251,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .longform article p.pubdate {
     color: var(--slate-gray);
-    font-family: var(--display);
     font-size: 1.4rem;
     margin: 0 0 1rem;
     opacity: .8;
@@ -326,7 +267,7 @@ h1,h2,h3,h4,h5,h6 {
 .longform .article-body p,
 .longform .article-body ul {
     font-size: 1.5rem;
-    line-height: 1.45;
+    line-height: 1.5;
     margin-bottom: 1.5rem;
 }
 
@@ -353,8 +294,8 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 500;
 }
 
-.longform article .featured-image {
-    background: #fafafa;
+.longform article img {
+    background: #f5f5f7;
     border: 1px solid #9f9f9f;
     border-radius: .5rem;
     margin-bottom: 1.5rem;
@@ -370,23 +311,24 @@ h1,h2,h3,h4,h5,h6 {
 
 .longform h2 {
     margin: 0;
-    font-size: 3.4rem;
+    font-size: 4rem;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.1;
     text-wrap: pretty;
+}
+
+.longform .tag-art h2 {
+    margin: 0;
+    font-size: 2.8rem;
 }
 
 .longform h2 a {
     color: var(--onyx);
     transition: color 0.3s ease-in-out;
-    background-image: linear-gradient(transparent 90%, currentColor 98%);
-    background-repeat: no-repeat;
-    background-size: 0 100%;
-    transition: background-size 0.3s ease;
 }
 
 .longform h2 a:hover {
-    background-size: 100% 100%;
+    border: none;
     color: var(--orangeish);
 }
 
@@ -466,7 +408,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .lilcol-wrap {
-    width: 22.4rem;
+    width: 24.4rem;
 }
 
 .quickbytes {
@@ -477,11 +419,10 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     display: flex;
     gap: .5rem;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 2.2rem;
+    font-weight: 600;
     line-height: 1.4;
     margin: 0 0 1.5rem;
-    text-transform: uppercase;
 }
 
 .misc h4 {
@@ -499,7 +440,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .quickbytes article span {
-    font-family: var(--display);
     font-size: 1.3rem;
 }
 
@@ -540,7 +480,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .misc blockquote {
     font-family: var(--display);
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.3;
     margin: 0;
@@ -568,7 +508,7 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 0.5rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     font-family: var(--display);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: .75rem;
     padding: 0.5rem;
     width: 100%;
