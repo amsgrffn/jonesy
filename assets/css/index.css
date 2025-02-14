@@ -202,6 +202,47 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 1.5rem;
 }
 
+.skybar {
+    align-content: flex-start;
+    border-bottom: 1px solid #9f9f9f;
+    display: flex;
+    gap: 4rem;
+    height: auto;
+    justify-content: space-between;
+    margin: .75rem auto;
+    padding: .75rem 0;
+    position: relative;
+    text-align: left;
+    width: 96rem;
+}
+
+.skybar p, .skybar ul {
+    font-size: 1.2rem
+}
+
+.skybar ul {
+
+}
+
+.skybar ul li {
+    display: inline;
+    font-weight: 300;
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+.skybar ul li:last-child {
+    margin-right: 0
+}
+
+.skybar ul svg {
+    display: inline;
+    height: 15px;
+    margin: -3px 2px 0 0;
+    vertical-align: middle;
+    width: 15px;
+}
+
 
 /* 			_______________________	*/
 /*			THE MASTHEAD			*/
@@ -238,7 +279,7 @@ h1,h2,h3,h4,h5,h6 {
 .hat p.heading {
     font-family: var(--display);
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.1;
     margin: 0 0 .2rem;
 }
@@ -342,7 +383,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
-    text-wrap: prettyl
+    text-wrap: pretty;
 }
 
 .longform .article-body blockquote {

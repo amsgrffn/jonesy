@@ -1,4 +1,17 @@
     <header>
+    <div class="skybar">
+        <ul>
+            <li>{{date format="dddd, MMMM D, YYYY"}}</li>
+            <li class="the-weather">Currently: <a href="https://en.wikipedia.org/wiki/Maine"><span id="current-temp"></span>,<span id="current-condition"></span></a></li>
+            <li class="draught">{{> "icons/basketball"}}Last Knicks Title: <span id="knicks-counter"></span></li>
+            <li class="title-please">{{> "icons/error"}}<a href="https://letterboxd.com/hoxie/films/diary/for/2025/">Days Since Last Mistake: 0</a></li>
+        </ul>
+        <ul>
+            <li>Subscribe</li>
+            <li>Login</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></li>
+        </ul>
+    </div>
     <div class="hat">
        <!-- <div id="eyepop">
             <p class="motto"><span class="accent">
@@ -40,6 +53,6 @@
         </div>
     </div>
     <div class="masthead">
-        <a href="/"><img src="https://picsum.photos/960/340" height="340" width="960" alt="Photo"></a>
+        <a href="/"><img src="https://picsum.photos/960/340" height="340" width="960" border="0"/></a>
     </div>
 </header>
