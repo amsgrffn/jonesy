@@ -14,7 +14,8 @@
     --yellow: #FFFFD1;
 
     /* FONTS */
-    --display: 'adelle-sans-condensed',"new-spirit-condensed",'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, ui-sans-serif, system-ui, Ubuntu, Cantarell, 'Noto Sans', 'Droid Sans', sans-serif;
+    --alt: 'adelle-sans-condensed','SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, ui-sans-serif, system-ui, Ubuntu, Cantarell, 'Noto Sans', 'Droid Sans', sans-serif;
+    --display: 'adelle-condensed','SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, ui-sans-serif, system-ui, Ubuntu, Cantarell, 'Noto Sans', 'Droid Sans', sans-serif;
     --mono: 'SF Mono', ui-monospace, Menlo, Consolas, Roboto Mono, 'Ubuntu Mono', 'DejaVu Sans Mono', monospace;
     --sans-serif: adelle, 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, ui-sans-serif, system-ui, Ubuntu, Cantarell, 'Noto Sans', 'Droid Sans', sans-serif;
     --serif: 'New York', -apple-system, BlinkMacSystemFont, Georgia, ui-sans-serif, system-ui, serif;

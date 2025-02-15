@@ -1,0 +1,11 @@
+  <div class="lilcol quickbytes">
+    <h4>Bookmarks and Notes <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rss"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg></h4>
+    {{#get "posts" include="tags,authors" filter="tags:[bookmarks,qik,noted,note,link]" limit="20" as |post|}}
+        {{#post}}
+        {{> "cards/quickbytes-card"}}
+        {{/post}}
+    {{/get}}
+        <p>
+        Feed: <a href="https://web.archive.org/web/20050301003430/http://feeds.feedburner.com/CoudalFreshSignals">RSS, Atom, Etc.</a>
+        </p>
+</div>

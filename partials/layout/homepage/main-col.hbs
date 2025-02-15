@@ -1,0 +1,9 @@
+<main class="longform">
+    <div class="longform-wrap">
+        {{#get "posts" include="tags,authors" filter="tags:-[bookmarks,qik,noted,link]" limit="20" as |post|}}
+            {{#post}}
+            {{> "cards/article-card"}}
+            {{/post}}
+        {{/get}}
+    </div>
+</main>

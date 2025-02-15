@@ -1,0 +1,126 @@
+.skybar {
+    align-content: flex-start;
+    border-bottom: 1px solid #9f9f9f;
+    display: flex;
+    gap: 4rem;
+    height: auto;
+    justify-content: space-between;
+    margin: .75rem auto;
+    padding: .75rem 0;
+    position: relative;
+    text-align: left;
+    width: 96rem;
+}
+
+.skybar p,
+.skybar ul {
+    font-size: 1.2rem;
+}
+
+.skybar ul {}
+
+.skybar ul li {
+    display: inline;
+    font-weight: 300;
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+.skybar ul li:last-child {
+    margin-right: 0;
+}
+
+.skybar ul svg {
+    display: inline;
+    height: 15px;
+    margin: -3px 2px 0 0;
+    vertical-align: middle;
+    width: 15px;
+}
+
+.hat {
+    align-content: flex-start;
+    border-bottom: 3px double #9f9f9f;
+    display: flex;
+    gap: 4rem;
+    height: auto;
+    justify-content: space-between;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    position: relative;
+    text-align: left;
+    width: 96rem;
+}
+
+.hat .logo {
+    display: inline;
+}
+
+.masthead {
+    height: 34rem;
+    margin: 0 auto;
+    position: relative;
+    width: 96rem;
+}
+
+.masthead img {
+    border-radius: .5rem;
+}
+
+.head-bloc {
+    width: 31.7rem;
+}
+
+.hat p.heading {
+    font-family: var(--display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 .2rem;
+    text-transform: uppercase;
+}
+
+.hat p {
+    font-size: 1.3rem;
+    line-height: 1.45;
+    margin: 0;
+    text-wrap: pretty;
+}
+
+.head-bloc.support {
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+    justify-content: right;
+    width: 31.7rem;
+}
+
+.head-bloc.support .logo {
+    width: 10rem;
+}
+
+.hat .mono {
+    font-family: var(--mono);
+}
+
+#eyepop {
+    background-color: #FFF;
+    left: 14px;
+    position: absolute;
+    text-align: left;
+    top: 13px;
+    visibility: hidden;
+    z-index: 10;
+    width: 510px;
+}
+
+#eyepop2 {
+    position: absolute;
+    width: 510px;
+    left: 14px;
+    top: 13px;
+    text-align: left;
+    background-color: #FFF;
+    z-index: 20;
+    visibility: hidden;
+}
