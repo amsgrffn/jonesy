@@ -189,7 +189,7 @@
     color: var(--slate-gray);
     font-family: var(--alt);
     font-size: 1.3rem;
-    margin: 0 0 .3rem;
+    margin: 0 0 1rem;
     text-transform: uppercase;
 }
 
@@ -267,7 +267,8 @@
 
 .quickbytes article span {
     font-family: var(--alt);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 .quickbytes article span a {

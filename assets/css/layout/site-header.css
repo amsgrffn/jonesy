@@ -17,11 +17,13 @@
     font-size: 1.2rem;
 }
 
-.skybar ul {}
+.skybar ul {
+    font-family: var(--alt);
+}
 
 .skybar ul li {
     display: inline;
-    font-weight: 300;
+    font-weight: 400;
     list-style-type: none;
     margin-right: 2rem;
 }
