@@ -5,7 +5,7 @@
 }
 
 .col-wrap {
-    border-top: 3px double #9f9f9f;
+    border-top: 3px double var(--uchu-gray-8);
     display: flex;
     margin: 1rem auto 0;
     width: 96rem;
@@ -13,7 +13,7 @@
 
 
 .longform {
-    border-right: 1px solid #9f9f9f;
+    border-right: 1px solid var(--uchu-gray-8);
     padding: 1rem 0 4rem 0;
     margin: 0;
 }
@@ -23,7 +23,7 @@
 }
 
 .longform article {
-    border-bottom: 1px solid #9f9f9f;
+    border-bottom: 1px solid var(--uchu-gray-8);
     margin-bottom: 1.5rem;
     padding: 0 1.5rem 1.5rem 0;
 }
@@ -43,7 +43,7 @@
 }
 
 .longform .article-body blockquote {
-   border-left: 1px solid var(--onyx);
+   border-left: 1px solid var(--uchu-gray-8);
    margin-left: 0;
    padding-left: 1.5rem;
 }
@@ -60,8 +60,8 @@
 }
 
 .longform .article-body p a {
-    border-bottom: 1px solid var(--orangeish);
-    color: var(--orangeish);
+    border-bottom: 1px solid var(--uchu-orange-5);
+    color: var(--uchu-orange-5);
 }
 
 .longform .article-body p a {
@@ -92,7 +92,7 @@
 }
 
 .longform h2 a {
-    color: var(--onyx);
+    color: var(--uchu-yin-9);
     transition: color 0.3s ease-in-out;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .longform .tag-quote blockquote:after {
-    background-color: #1d1d1f;
+    background-color: var(--uchu-yin-9);
     content: '';
     display: block;
     height: 2px;
@@ -186,15 +186,20 @@
 }
 
 .longform article p.pubdate {
-    color: var(--slate-gray);
+    color: var(--uchu-yin-7);
     font-family: var(--alt);
     font-size: 1.3rem;
     margin: 0 0 1rem;
     text-transform: uppercase;
 }
 
+.longform article p.pubdate a:hover {
+    border-bottom: 1px solid var(--uchu-orange-5);
+    color: var(--uchu-orange-5);
+}
+
 .longform article footer a {
-    color: var(--slate-gray);
+    color: var(--uchu-yin-7);
 }
 
 .longform article footer p {
@@ -213,7 +218,7 @@
 }
 
 .lilcol {
-    border-right: 1px solid #9f9f9f;
+    border-right: 1px solid var(--uchu-gray-8);
     margin: 0;
 }
 
@@ -238,13 +243,14 @@
 
 .lilcol h4 {
     align-items: center;
+    color: var(--uchu-yin-9);
     display: flex;
-    gap: 1rem;
-    font-size: 1.5rem;
-    font-weight: 700;
+    gap: .5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
     line-height: 1.4;
     margin: 0 0 1.5rem;
-    text-transform: uppercase;
+
 }
 
 .lilcol.quickbytes h4 {
@@ -257,7 +263,6 @@
 
 .lilcol h4 svg {
     display: inline;
-    margin-top: -2px;
     vertical-align: middle;
 }
 
@@ -272,7 +277,7 @@
 }
 
 .quickbytes article span a {
-    color: var(--slate-gray);
+    color: var(--uchu-yin-7);
 }
 
 .lilcol p {
@@ -281,8 +286,8 @@
 }
 
 .quickbytes article p a {
-    border-bottom: 1px solid var(--orangeish);
-    color: var(--orangeish);
+    border-bottom: 1px solid oklch(64.63% 0.240916 32.6151);
+    color: oklch(64.63% 0.240916 32.6151);
     font-weight: 500;
 }
 
@@ -300,7 +305,7 @@
 
 .misc section {
     margin: 0 0 1.5rem;
-    border-bottom: 1px solid #9f9f9f;
+    border-bottom: 1px solid var(--uchu-gray-8);
     padding: 0 0 1.5rem 1.5rem;
 }
 
@@ -359,13 +364,13 @@
 }
 
 .input-group button {
-    background: var(--orangeish);
-    border: 1px solid var(--orangeish);
+    background: var(--uchu-orange-5);
+    border: 1px solid var(--uchu-orange-5);
     border-radius: 0.5rem;
     color: white;
     cursor: pointer;
     font-family: var(--display);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 400;
     padding: 0.5rem 1rem;
     white-space: nowrap;
@@ -397,7 +402,7 @@
 /*			THE NAVIGATION			*/
 
 .nav {
-    border-bottom: 3px double #9f9f9f;
+    border-bottom: 3px double var(--uchu-gray-8);
     font-size: 1.3rem;
     margin: 0 0 1.5rem 0;
     padding: 0 0 1.5rem 0;
@@ -429,17 +434,9 @@
     border: 0;
 }
 
-.nav ul li a:link.active,
-.nav ul li a:visited.active,
 .nav ul li a:hover {
-    color: #222;
+    border-bottom: none;
+    color: var(--orangeish);
     text-decoration: none;
     background: url(/web/20050301194246im_/http://www.coudal.com/i/tab_pyra.gif) no-repeat left top;
-    border: 0;
-}
-
-.nav ul li a:visited {
-    color: #555;
-    text-decoration: none;
-    border: 0;
 }

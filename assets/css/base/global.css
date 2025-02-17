@@ -24,8 +24,8 @@ html {
 body {
     background: #fff;
     background-attachment: fixed;
-    border-top: 2px solid #858383;
-    color: #1d1d1f;
+    border-top: 2px solid var(--uchu-yin-8);
+    color: var(--uchu-yin-9);
     font-family: var(--sans-serif);
     font-size: 1.6rem;
     height: 100%;
@@ -46,27 +46,6 @@ a:link {
 }
 
 a {}
-
-a:visited {
-    color: #222;
-    text-decoration: none;
-    padding-bottom: 0px;
-    border-bottom: 1px solid #CCC;
-}
-
-a:active {
-    color: #777;
-    text-decoration: none;
-    padding-bottom: 0px;
-    border-bottom: 1px solid #CCC;
-}
-
-a:hover {
-    color: #858383;
-    text-decoration: none;
-    padding-bottom: 0px;
-    border-bottom: 1px solid #CCC;
-}
 
 .strikethrough {
     text-decoration: line-through;

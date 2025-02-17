@@ -1,0 +1,30 @@
+.article-col {
+    border-right: 1px solid #9f9f9f;
+    padding-top: 1rem;
+    width: 40rem;
+}
+
+.post-template main article {
+    border-bottom: 1px solid #9f9f9f;
+    margin-bottom: 3rem;
+    padding: 0 1.5rem 3rem 0;
+}
+
+.post-template .pubdate {
+    font-family: var(--alt);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.post-template article h2 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    margin: 0 0 1.5rem;
+}
+
+.post-template footer {
+    border-top: 1px solid #9f9f9f;
+    margin-top: 3rem;
+    padding-right: 1.5rem;
+}

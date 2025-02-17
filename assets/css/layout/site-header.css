@@ -1,11 +1,11 @@
 .skybar {
     align-content: flex-start;
-    border-bottom: 1px solid #9f9f9f;
+    border-bottom: 1px solid var(--uchu-gray-8);
     display: flex;
     gap: 4rem;
     height: auto;
     justify-content: space-between;
-    margin: .75rem auto;
+    margin: .75rem auto 0;
     padding: .75rem 0;
     position: relative;
     text-align: left;
@@ -14,11 +14,28 @@
 
 .skybar p,
 .skybar ul {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
+.skybar p,
 .skybar ul {
     font-family: var(--alt);
+}
+
+.skybar ul a {
+    color: oklch(64.63% 0.240916 32.6151);
+    font-weight: 400;
+}
+
+.skybar p a {
+    color: oklch(64.63% 0.240916 32.6151);
+    font-weight: 400;
+}
+
+.skybar p a:hover {
+    border-bottom: 1px solid oklch(64.63% 0.240916 32.6151);
+    color: oklch(64.63% 0.240916 32.6151);
+    font-weight: 600;
 }
 
 .skybar ul li {
@@ -32,23 +49,36 @@
     margin-right: 0;
 }
 
+.skybar img.logo {
+    display: inline;
+}
+
+.skybar p svg,
 .skybar ul svg {
     display: inline;
     height: 15px;
-    margin: -3px 2px 0 0;
+    margin: -1px 0 0 0;
     vertical-align: middle;
     width: 15px;
 }
 
+.skybar ul svg {
+    margin-right: 2px
+}
+
+.skybar p svg.locate-fixed {
+    margin-right: 3px
+}
+
 .hat {
     align-content: flex-start;
-    border-bottom: 3px double #9f9f9f;
+    border-bottom: 3px double var(--uchu-gray-8);
     display: flex;
     gap: 4rem;
     height: auto;
     justify-content: space-between;
     margin: 1rem auto;
-    padding: 1rem 0;
+    padding: .5rem 0 1.5rem;
     position: relative;
     text-align: left;
     width: 96rem;
@@ -74,12 +104,18 @@
 }
 
 .hat p.heading {
+    color: var(--uchu-yin-9);
     font-family: var(--display);
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin: 0 0 .2rem;
-    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+}
+
+.hat p.heading a:hover {
+    color: var(--orangeish);
+    border: none;
 }
 
 .hat p {

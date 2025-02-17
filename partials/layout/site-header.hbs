@@ -1,14 +1,22 @@
     <header>
     <div class="skybar">
+        {{#is 'post'}}
+        {{#post}}
+        <p>
+            {{> "icons/map-pin"}}You are here: <a href="/">{{site.url}}Home</a>{{> "icons/chevron"}}{{date format="M/D/YYYY"}}{{> "icons/chevron"}}{{#primary_tag}}<a href="{{url}}">{{name}}</a>{{/primary_tag}}{{> "icons/chevron"}}{{title}}
+        </p>
+        {{/post}}
+        {{else}}
         <ul>
             <li>{{date format="dddd, MMMM D, YYYY"}}</li>
-            <li class="the-weather">Currently: <a href="https://en.wikipedia.org/wiki/Maine"><span id="current-temp"></span>,<span id="current-condition"></span></a></li>
+            <li class="the-weather">Currently: <span id="current-temp"></span>,<span id="current-condition"></span></li>
             <li class="draught">{{> "icons/basketball"}}Last Knicks Title: <span id="knicks-counter"></span></li>
-            <li class="title-please">{{> "icons/error"}}<a href="https://letterboxd.com/hoxie/films/diary/for/2025/">Days Since Last Mistake: 0</a></li>
+            <li class="title-please">{{> "icons/error"}}Days Since Last Mistake: 0</li>
         </ul>
+        {{/is}}
         <ul>
-            <li>Subscribe</li>
-            <li>Login</li>
+            <li><a href="/memberships/">Subscribe</a></li>
+            <li><a href="/#/portal/account">Login</a></li>
             <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></li>
         </ul>
     </div>
@@ -39,12 +47,12 @@
             <p>We started this electronic scrapbook to keep us more or less sane and charitable. Equanimity created is closer than equanimity found.</p>
         </div>
         <div class="head-bloc">
-            <p class="heading">{{date format="dddd, MMMM D, YYYY"}}</p>
+            <p class="heading">{{date format="dddd"}} Edition</p>
             <p>We made it another day. Fuck yeah!. Make the most of it. Hug the people you love. Also <span class="mono">50</span> days till opening day.</p>
         </div>
         <div class="head-bloc support">
             <div class="about-bloc-text">
-                 <p class="heading">Memberships</p>
+                 <p class="heading"><a href="/memberships/">Memberships</a></p>
                  <p>If you enjoy our work and are so inclined, jump to <a href="/memberships">our membership page</a> to checkout the various options.</p>
             </div>
 
