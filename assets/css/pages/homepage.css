@@ -60,13 +60,13 @@
 }
 
 .longform .article-body p a {
-    border-bottom: 1px solid var(--uchu-orange-5);
-    color: var(--uchu-orange-5);
+    border-bottom: 1px solid oklch(64.63% 0.240916 32.6151);
+    color: oklch(64.63% 0.240916 32.6151);
 }
 
-.longform .article-body p a {
+.longform .article-body p a:hover {
     border-bottom: none;
-    color: var(--onyx);
+    color: var(--uchu-yin-9);
 }
 
 .longform h2 {
@@ -83,6 +83,7 @@
     font-size: 4rem;
     font-weight: 800;
     line-height: 1.1;
+    margin-bottom: 1rem;
     text-wrap: pretty;
 }
 
@@ -98,7 +99,7 @@
 
 .longform h2 a:hover {
     border: none;
-    color: var(--orangeish);
+    color: oklch(64.63% 0.240916 32.6151);
 }
 
 .longform h3, .longform h4 {
@@ -137,7 +138,7 @@
     font-family: var(--alt);
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 1rem;
 }
 
@@ -187,15 +188,18 @@
 
 .longform article p.pubdate {
     color: var(--uchu-yin-7);
-    font-family: var(--alt);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 0 0 1rem;
     text-transform: uppercase;
 }
 
+.longform article p.pubdate span {
+    font-weight: 700;
+}
+
 .longform article p.pubdate a:hover {
-    border-bottom: 1px solid var(--uchu-orange-5);
-    color: var(--uchu-orange-5);
+    border-bottom: 1px solid oklch(64.63% 0.240916 32.6151);
+    color: oklch(64.63% 0.240916 32.6151);
 }
 
 .longform article footer a {
@@ -246,7 +250,7 @@
     color: var(--uchu-yin-9);
     display: flex;
     gap: .5rem;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 600;
     line-height: 1.4;
     margin: 0 0 1.5rem;
@@ -315,8 +319,8 @@
 
 .misc blockquote {
     font-family: var(--display);
-    font-size: 2.4rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 600;
     line-height: 1.3;
     margin: 0;
     padding: 0;

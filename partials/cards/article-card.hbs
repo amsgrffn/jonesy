@@ -1,5 +1,5 @@
 <article class="{{post_class}}">
-    <p class="pubdate">{{#has tag="quote"}}<a href="{{url}}"><time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="dddd, MMMM D, YYYY"}}</time></a>{{else}}<time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="dddd, MMMM D, YYYY"}}</time>{{/has}}</p>
+    <p class="pubdate">{{#has tag="quote"}}<a href="{{url}}"><time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="dddd, MMMM D, YYYY"}}</time></a>{{else}}<time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="dddd, MMMM D, YYYY"}}</time>{{/has}} {{#if featured}}&bull; <span>Featured</span>{{/if}}</p>
     <h2><a href="{{url}}">{{title}}</a></h2>
     {{#if feature_image}}
         <div class="featured-img-wrap">
@@ -33,7 +33,7 @@
         </div>
     {{/if}}
     <div class="article-body">
-        <p>{{#if custom_excerpt}}{{custom_excerpt}}{{else}}{{content}}{{/if}}</p>
+        {{#if custom_excerpt}}<p>{{custom_excerpt}}</p>{{else}}{{content}}{{/if}}
         {{#if featured}}<p class="continue-reading">Continue Reading</p>{{/if}}
     </div>
     <footer>
