@@ -14,7 +14,7 @@
 
 .skybar p,
 .skybar ul {
-    font-family: var(--alt);
+    font-family: var(--display);
     font-size: 1.4rem;
 }
 
