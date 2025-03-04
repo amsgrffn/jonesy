@@ -1,6 +1,6 @@
 .skybar {
     align-content: flex-start;
-    border-bottom: 1px solid var(--uchu-gray-8);
+    border-bottom: 1px solid var(--uchu-gray-6);
     display: flex;
     gap: 4rem;
     height: auto;
@@ -63,7 +63,7 @@
 
 .hat {
     align-content: flex-start;
-    border-bottom: 3px double var(--uchu-gray-8);
+    border-bottom: 3px double var(--uchu-gray-6);
     display: flex;
     gap: 4rem;
     height: auto;
