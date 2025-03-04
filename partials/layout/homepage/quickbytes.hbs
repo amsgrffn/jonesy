@@ -1,5 +1,5 @@
   <div class="lilcol quickbytes">
-    <h4>Bookmarks and Notes {{> "icons/feed"}}</h4>
+    <h4>Quick Bytes {{> "icons/feed"}}</h4>
     {{#get "posts" include="tags,authors" filter="tags:[bookmarks,qik,noted,note,link]" limit="20" as |post|}}
         {{#post}}
         {{> "cards/quickbytes-card"}}

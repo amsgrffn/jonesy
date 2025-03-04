@@ -14,20 +14,11 @@
 
 .skybar p,
 .skybar ul {
-    font-size: 1.3rem;
-}
-
-.skybar p,
-.skybar ul {
     font-family: var(--alt);
+    font-size: 1.4rem;
 }
 
-.skybar ul a {
-    color: oklch(64.63% 0.240916 32.6151);
-    font-weight: 400;
-}
-
-.skybar p a {
+.skybar p a, .skybar ul a {
     color: oklch(64.63% 0.240916 32.6151);
     font-weight: 400;
 }
@@ -106,8 +97,8 @@
 .hat p.heading {
     color: var(--uchu-yin-9);
     font-family: var(--display);
-    font-size: 1.7rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 600;
     line-height: 1.3;
     margin: 0;
     padding: 0;
@@ -119,7 +110,7 @@
 }
 
 .hat p {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     line-height: 1.45;
     margin: 0;
     text-wrap: pretty;

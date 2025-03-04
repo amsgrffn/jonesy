@@ -199,11 +199,12 @@
       --uchu-yang: oklch(var(--uchu-yang-raw));
 
     /* FONTS */
-    --alt: adelle,'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, ui-sans-serif, system-ui, Ubuntu, Cantarell, 'Noto Sans', 'Droid Sans', sans-serif;
-    --display: 'new-kansas','adelle-sans-condensed','SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, ui-sans-serif, system-ui, Ubuntu, Cantarell, 'Noto Sans', 'Droid Sans', sans-serif;
+    --alt: "tablet-gothic-narrow",'SF Pro Text',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,'Segoe UI',Roboto,Oxygen,Cantarell,Ubuntu,noto,arial,sans-serif;
+    --display: "field-gothic-compact",'aktiv-grotesk-condensed','adelle-sans-condensed','SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, ui-sans-serif, system-ui, Ubuntu, Cantarell, 'Noto Sans', 'Droid Sans', sans-serif;
     --mono: 'SF Mono', ui-monospace, Menlo, Consolas, Roboto Mono, 'Ubuntu Mono', 'DejaVu Sans Mono', monospace;
-    --sans-serif: adelle, 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, ui-sans-serif, system-ui, Ubuntu, Cantarell, 'Noto Sans', 'Droid Sans', sans-serif;
+    --sans-serif: "field-gothic",neue-haas-unica,'tablet-gothic',portada,adelle, 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, ui-sans-serif, system-ui, Ubuntu, Cantarell, 'Noto Sans', 'Droid Sans', sans-serif;
     --serif: 'New York', -apple-system, BlinkMacSystemFont, Georgia, ui-sans-serif, system-ui, serif;
+    --wide: "field-gothic-wide","tablet-gothic-wide","owners",'aktiv-grotesk-condensed','SF Pro Display',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,'Segoe UI',Roboto,Oxygen,Cantarell,Ubuntu,noto,arial,sans-serif;
 
     /* SIZES */
     --height: 4rem;

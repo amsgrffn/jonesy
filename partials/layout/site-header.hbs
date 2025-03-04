@@ -5,6 +5,11 @@
         <p>
             {{> "icons/map-pin"}}You are here: <a href="/">{{site.url}}Home</a>{{> "icons/chevron"}}{{date format="M/D/YYYY"}}{{> "icons/chevron"}}{{#primary_tag}}<a href="{{url}}">{{name}}</a>{{/primary_tag}}{{> "icons/chevron"}}{{title}}
         </p>
+        <ul>
+            <li><a href="/memberships/">Subscribe</a></li>
+            <li><a href="/#/portal/account">Login</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></li>
+        </ul>
         {{/post}}
         {{else}}
         <ul>
@@ -12,13 +17,11 @@
             <li class="the-weather">Currently: <span id="current-temp"></span>,<span id="current-condition"></span></li>
             <li class="draught">{{> "icons/basketball"}}Last Knicks Title: <span id="knicks-counter"></span></li>
             <li class="title-please">{{> "icons/error"}}Days Since Last: 0</li>
-        </ul>
-        {{/is}}
-        <ul>
             <li><a href="/memberships/">Subscribe</a></li>
             <li><a href="/#/portal/account">Login</a></li>
             <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></li>
         </ul>
+        {{/is}}
     </div>
     <div class="hat">
        <!-- <div id="eyepop">
