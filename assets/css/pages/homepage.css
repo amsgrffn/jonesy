@@ -225,7 +225,7 @@
 }
 
 .lilcol {
-    border-right: 1px solid var(--uchu-gray-8);
+    border-right: 1px solid var(--uchu-gray-6);
     margin: 0;
 }
 
@@ -314,7 +314,7 @@
 
 .misc section {
     margin: 0 0 1.5rem;
-    border-bottom: 1px solid var(--uchu-gray-8);
+    border-bottom: 1px solid var(--uchu-gray-6);
     padding: 0 0 1.5rem 1.5rem;
 }
 
@@ -411,7 +411,7 @@
 /*			THE NAVIGATION			*/
 
 .nav {
-    border-bottom: 3px double var(--uchu-gray-8);
+    border-bottom: 3px double var(--uchu-gray-6);
     font-size: 1.3rem;
     margin: 0 0 1.5rem 0;
     padding: 0 0 1.5rem 0;
