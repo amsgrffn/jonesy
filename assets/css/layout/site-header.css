@@ -6,10 +6,11 @@
     height: auto;
     justify-content: space-between;
     margin: .75rem auto 0;
-    padding: .75rem 0;
+    padding: .5rem 0;
     position: relative;
     text-align: left;
     width: 96rem;
+    background-color: #f9f9f9; /* Light background for top bar */
 }
 
 .skybar p,
@@ -63,16 +64,18 @@
 
 .hat {
     align-content: flex-start;
-    border-bottom: 3px double var(--uchu-gray-6);
+    border-top: 3px solid var(--uchu-yin-9); /* Stronger top border */
+    border-bottom: 1px solid var(--uchu-yin-9); /* Cleaner bottom border */
     display: flex;
     gap: 4rem;
     height: auto;
     justify-content: space-between;
-    margin: 1rem auto;
-    padding: .5rem 0 1.5rem;
+    margin: 0 auto 2rem;
+    padding: 1.5rem 0;
     position: relative;
     text-align: left;
     width: 96rem;
+    background-color: #f9f9f9; /* Light background for hat */
 }
 
 .hat .logo {
@@ -81,7 +84,7 @@
 
 .masthead {
     height: 34rem;
-    margin: 0 auto;
+    margin: 0 auto 1.5rem;
     position: relative;
     width: 96rem;
 }
@@ -92,17 +95,64 @@
 
 .head-bloc {
     width: 31.7rem;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.head-bloc:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -2rem;
+    top: 10%;
+    height: 80%;
+    width: 1px;
+    background-image: radial-gradient(circle, var(--uchu-yin-9) 1px, transparent 1px);
+    background-size: 1px 8px;
+    background-repeat: repeat-y;
 }
 
 .hat p.heading {
     color: var(--uchu-yin-9);
     font-family: var(--display);
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 1.3;
-    margin: 0;
+    font-size: 1.8rem; /* Larger size */
+    font-weight: 700; /* Bolder */
+    line-height: 1.1;
+    margin: 0 0 0.5rem 0;
     padding: 0;
+    text-transform: uppercase; /* Magazine style uppercase */
+    letter-spacing: -0.02em; /* Tighter spacing for headlines */
 }
+
+.hat p.heading::before {
+    content: attr(data-section);
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-bottom: 5px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+/* Add decorative line under headings */
+.hat p.heading::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--uchu-yin-9);
+    margin: 8px 0;
+}
+
+/* Make description text italic for that editorial feel */
+.hat p:not(.heading) {
+    font-size: 1.35rem;
+    line-height: 1.45;
+    margin: 0;
+    text-wrap: pretty;
+    font-style: italic; /* Editorial style */
+}
+
 
 .hat p.heading a:hover {
     color: var(--orangeish);
@@ -114,14 +164,6 @@
     line-height: 1.45;
     margin: 0;
     text-wrap: pretty;
-}
-
-.head-bloc.support {
-    align-items: center;
-    display: flex;
-    gap: 3rem;
-    justify-content: right;
-    width: 31.7rem;
 }
 
 .head-bloc.support .logo {
